@@ -1,0 +1,10 @@
+h2 ip route add default via 192.168.1.1
+h3 ip route add default via 192.168.1.1
+
+serverA ip route add default via 100.64.10.1
+serverB ip route add default via 100.64.10.1
+
+serverA ip route add 192.168.1.0/24 via 192.168.42.10
+serverB ip route add 192.168.1.0/24 via 10.9.96.3
+
+microtik ip route add 10.9.96.0/20 via 192.168.42.1
